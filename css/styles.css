@@ -1,0 +1,434 @@
+/* ===================== */
+/*  ESTILOS GENERALES   */
+/* ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff8fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===================== */
+/*  HEADER / MENÚ        */
+/* ===================== */
+.header {
+  background: linear-gradient(90deg, #ff4081, #ff80ab);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    width: 100%;
+    background: linear-gradient(90deg, #ff4081, #ff80ab);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .nav.active {
+    display: block;
+    text-align: center;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+}
+
+/* ===================== */
+/*  HERO / INICIO        */
+/* ===================== */
+.hero {
+  background: linear-gradient(rgba(255,64,129,0.5), rgba(255,64,129,0.5)),
+              url('../imagenes/perfume1.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  background-color: white;
+  color: #ff4081;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #ffe5ef;
+}
+
+/* ===================== */
+/*  SECCIÓN NOSOTROS     */
+/* ===================== */
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 20px;
+}
+
+.nosotros img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.nosotros-texto h2 {
+  color: #ff4081;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.nosotros-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* ===================== */
+/*  SECCIÓN PRODUCTOS    */
+/* ===================== */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicios h2 {
+  color: #ff4081;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.producto {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.producto h3 {
+  color: #ff4081;
+  margin: 15px 0 10px;
+}
+
+.producto p {
+  font-weight: bold;
+}
+
+.producto button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.producto button:hover {
+  background: #ff80ab;
+}
+
+/* ===================== */
+/*  CARRITO DE COMPRAS   */
+/* ===================== */
+.carrito {
+  margin-top: 40px;
+  background: #fff0f6;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(255,64,129,0.2);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.carrito h3 {
+  color: #ff4081;
+  margin-bottom: 15px;
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.carrito ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.carrito button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carrito button:hover {
+  background: #ff80ab;
+}
+
+/* ===================== */
+/*  CONTACTO             */
+/* ===================== */
+.contacto {
+  padding: 80px 20px;
+}
+
+.contacto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contacto-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contacto-info h2 {
+  color: #ff4081;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contacto-info p {
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.info-item i {
+  color: #ff4081;
+  font-size: 1.3rem;
+}
+
+.redes a {
+  color: #ff4081;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  color: #ff80ab;
+}
+
+.contacto-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(255,64,129,0.2);
+}
+
+.contacto-form h3 {
+  color: #ff4081;
+  margin-bottom: 20px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.contacto-form button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contacto-form button:hover {
+  background: #ff80ab;
+}
+
+/* ===================== */
+/*  MAPA                 */
+/* ===================== */
+.mapa {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mapa h2 {
+  color: #ff4081;
+  margin-bottom: 25px;
+}
+
+.mapa-box {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.mapa-box img {
+  width: 100%;
+  display: block;
+}
+
+/* ===================== */
+/*  FOOTER               */
+/* ===================== */
+footer {
+  background: linear-gradient(90deg, #ff4081, #ff80ab);
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+/* ===================== */
+/*  RESPONSIVO           */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .nosotros {
+    flex-direction: column;
+    text-align: center;
+  }
+  .productos {
+    grid-template-columns: 1fr;
+  }
+  .contacto-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info-item {
+    justify-content: center;
+  }
+}
