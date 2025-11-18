@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yanbal | Belleza y Estilo</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/custom.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Productos - Cafetería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #contenedor-productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .producto-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .producto-card:hover {
+            transform: translateY(-10px);
+        }
+        .producto-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .info {
+            padding: 15px;
+            text-align: center;
+        }
+        .info h2 {
+            margin: 18px;
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+        }
+        .info p {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .precio {
+            font-size: 22px;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #d35400;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container header-flex">
-      <img src="imagenes/logo.jpg" alt="Yanbal" class="logo">
-      <nav>
-        <a href="index.html" class="activo">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Descubre tu mejor versión con Yanbal</h1>
-      <p>Perfumes, cosméticos y joyas diseñadas para brillar cada día.</p>
-      <a href="servicios.html" class="button">Explorar Productos</a>
-    </div>
-  </section>
+    <h1>Nuestros Productos</h1>
 
-  <footer>
-    <p>© 2025 Yanbal Internacional | Proyecto Final - Diseño y Programación Web I</p>
-  </footer>
+    <div id="contenedor-productos"></div>
+
+    <script src="app.js"></script>
 </body>
 </html>
