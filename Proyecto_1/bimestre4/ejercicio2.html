@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+
+
+<h1 class="neon">
+Suma N números
+</h1>
+
+
+<input type="number" id="num">
+
+
+<button onclick="sumar()">
+Sumar
+</button>
+
+
+<p id="resultado"></p>
+
+
+<script>
+
+function sumar(){
+
+let n=num.value
+
+let suma=0
+
+
+for(let i=1;i<=n;i++){
+
+suma+=i
+
+}
+
+
+resultado.innerHTML=suma
+
+}
+
+</script>
+
+
+<p class="explicacion">
+
+Este ejercicio suma números usando ciclos.
+
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body>
+
+<body>
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+
+
+<h1 class="neon">
+Serie Fibonacci
+</h1>
+
+
+<input type="number" id="num" placeholder="Cantidad">
+
+
+<button onclick="fibo()">
+Generar
+</button>
+
+
+<p id="resultado"></p>
+
+
+<script>
+
+function fibo(){
+
+let n=num.value
+
+let a=0
+let b=1
+let texto=""
+
+for(let i=0;i<n;i++){
+
+texto+=a+" "
+
+let temp=a+b
+
+a=b
+
+b=temp
+
+}
+
+resultado.innerHTML=texto
+
+}
+
+</script>
+
+
+<p class="explicacion">
+
+Este ejercicio genera la serie Fibonacci usando ciclos.
+
+</p>
+
+
+</body>
+</html>

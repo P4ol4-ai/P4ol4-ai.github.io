@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Bisiesto</title>
+
+<p class="explicacion">
+
+Este ejercicio determina si un año es bisiesto utilizando operadores matemáticos y condicionales en JavaScript.
+
+</p>
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+
+<h1 class="neon">
+Año Bisiesto
+</h1>
+
+
+
+<input type="number" id="año">
+
+<button onclick="bisiesto()">
+Ver
+</button>
+
+
+
+<p id="resultado"></p>
+
+
+
+<script>
+
+function bisiesto(){
+
+let año = document.getElementById("año").value
+
+
+
+if((año%4==0 && año%100!=0) || año%400==0){
+
+resultado.innerHTML="Es bisiesto"
+
+}
+
+else{
+
+resultado.innerHTML="No es bisiesto"
+
+}
+
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+<h1 class="neon">
+Invertir texto
+</h1>
+
+
+<input type="text" id="texto">
+
+
+<button onclick="invertir()">
+Invertir
+</button>
+
+
+<p id="resultado"></p>
+
+
+<script>
+
+function invertir(){
+
+let t=texto.value
+
+let inv=t.split("").reverse().join("")
+
+resultado.innerHTML=inv
+
+}
+
+</script>
+
+
+<p class="explicacion">
+
+Este ejercicio invierte una cadena usando funciones.
+
+</p>
+
+
+</body>
+</html>

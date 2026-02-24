@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>Número</title>
+
+<p class="explicacion">
+
+Este ejercicio utiliza una función en JavaScript para clasificar un número como positivo par, positivo impar, negativo o cero mediante estructuras condicionales if.
+
+</p>
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+
+
+
+<h1 class="neon">
+Clasificar Número
+</h1>
+
+
+
+<input type="number" id="numero">
+
+<button onclick="clasificar()">
+Clasificar
+</button>
+
+
+
+<p id="resultado"></p>
+
+
+
+<script>
+
+function clasificar(){
+
+let num = document.getElementById("numero").value
+
+
+
+if(num > 0){
+
+if(num % 2 == 0){
+
+resultado.innerHTML="Positivo y Par"
+
+}else{
+
+resultado.innerHTML="Positivo e Impar"
+
+}
+
+}
+
+else if(num < 0){
+
+resultado.innerHTML="Negativo"
+
+}
+
+else{
+
+resultado.innerHTML="Es Cero"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

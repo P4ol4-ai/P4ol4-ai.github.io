@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+
+
+<h1 class="neon">
+Array
+</h1>
+
+
+<button onclick="array()">
+Ver
+</button>
+
+
+<p id="resultado"></p>
+
+
+<script>
+
+function array(){
+
+let numeros=[5,3,8,1,2]
+
+
+let suma=0
+
+
+for(let i=0;i<numeros.length;i++){
+
+suma+=numeros[i]
+
+}
+
+
+let orden=numeros.sort()
+
+
+resultado.innerHTML=
+
+"Suma: "+suma+"<br>"+
+
+"Ordenado: "+orden
+
+}
+
+</script>
+
+
+<p class="explicacion">
+
+Este ejercicio usa arrays para sumar y ordenar.
+
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Calificación</title>
+
+<p class="explicacion">
+
+Este ejercicio convierte una calificación numérica en una letra usando variables y estructuras if para tomar decisiones.
+
+</p>
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="index.html">⬅ Volver</a>
+
+</nav>
+
+</header>
+
+
+
+<h1 class="neon">
+Calificación
+</h1>
+
+
+
+<input type="number" id="nota">
+
+<button onclick="calcular()">
+Ver
+</button>
+
+
+
+<p id="resultado"></p>
+
+
+
+<script>
+
+function calcular(){
+
+let n = nota.value
+
+
+
+if(n>=90 && n<=100){
+
+resultado.innerHTML="A"
+
+}
+
+else if(n>=80){
+
+resultado.innerHTML="B"
+
+}
+
+else if(n>=70){
+
+resultado.innerHTML="C"
+
+}
+
+else if(n>=60){
+
+resultado.innerHTML="D"
+
+}
+
+else if(n>=0){
+
+resultado.innerHTML="F"
+
+}
+
+else{
+
+resultado.innerHTML="Nota inválida"
+
+}
+
+}
+
+</script>
+
+
+
+</body>
+</html>
