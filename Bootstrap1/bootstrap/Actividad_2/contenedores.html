@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 2 - Contenedores Bootstrap</title>
+
+  <!-- Bootstrap -->
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    nav {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #0d6efd;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main, article {
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <!-- TÍTULO -->
+  <div class="container text-center mt-4">
+    <h1>Actividad 2</h1>
+    <p class="text-muted">Contenedores</p>
+  </div>
+
+  <!-- CONTENEDOR 1 -->
+  <div class="container my-4">
+    <header class="text-center">
+      <h2>Mi Página Web</h2>
+      <p>Ejemplo de contenedores en Bootstrap</p>
+    </header>
+  </div>
+
+  <!-- CONTENEDOR 2 -->
+  <div class="container-fluid">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Productos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container my-4">
+    <main>
+      <h2>Contenido Principal</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error ex perferendis ipsa vero...
+      </p>
+    </main>
+
+    <article>
+      <h2>Artículo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint harum optio eius...
+      </p>
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="container-fluid mt-4">
+    <footer>
+      <p>© 2026 Todos los derechos reservados</p>
+    </footer>
+  </div>
+
+</body>
+</html>

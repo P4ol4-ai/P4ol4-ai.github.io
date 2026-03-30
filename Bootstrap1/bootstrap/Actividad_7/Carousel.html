@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hero Carousel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <h1 class="text-center">Actividad 7 </h1>
+  <p class="text-center text-muted mb-5">Carousel</p>
+<style>
+  .hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  #hero-carousel {
+    height: 100%;
+  }
+
+  /* Imagen ajustada para que se vea completa sin recortar */
+  .carousel-item img {
+    width: 100%;
+    height: auto; /* altura proporcional */
+    object-fit: none; /* sin recorte ni escalado */
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .carousel-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    z-index: 2;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+
+  .btn-get-started {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .btn-get-started:hover {
+    background-color: #0056b3;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+
+
+</style>
+</head>
+<body>
+<section id="hero" class="hero">
+  <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-item active">
+      <img src="/img/Descarga1.jpg" class="d-block w-100" alt="" />
+      <div class="carousel-container">
+        <h2>We are professional</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="/img/Descarga2.jpg" class="d-block w-100" alt="" />
+      <div class="carousel-container">
+        <h2>At vero eos et accusamus</h2>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="/img/Descarga3.jpg" class="d-block w-100" alt="" />
+      <div class="carousel-container">
+        <h2>Temporibus autem quibusdam</h2>
+        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </a>
+
+    <ol class="carousel-indicators">
+      <li data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#hero-carousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#hero-carousel" data-bs-slide-to="2"></li>
+    </ol>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
