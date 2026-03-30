@@ -174,38 +174,40 @@
 
         </div>
 
-        <form action="https://formspree.io/f/TU_ID" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <form action="https://formspree.io/f/xaqlowrj" method="POST"></form>
-          <div class="row gy-4">
+  <form action="https://formspree.io/f/xaqlowrj" method="POST" class="php-email-form p-4 shadow rounded bg-white border">
 
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Tu nombre" required="">
-            </div>
+  <div class="row gy-4">
 
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Tu Correo Electrónico" required="">
-            </div>
+    <div class="col-md-6">
+      <label class="form-label">Nombre</label>
+      <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+    </div>
 
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
-            </div>
+    <div class="col-md-6">
+      <label class="form-label">Correo</label>
+      <input type="email" name="email" class="form-control" placeholder="Tu correo" required>
+    </div>
 
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
-            </div>
+    <div class="col-md-12">
+      <label class="form-label">Asunto</label>
+      <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
+    </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Tu mensaje fue enviado con exito!!</div>
+    <div class="col-md-12">
+      <label class="form-label">Mensaje</label>
+      <textarea name="message" class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
 
-              <button type="submit">Enviar Mensaje </button>
-            </div>
+    <div class="col-md-12 text-center">
+     <button type="submit" class="btn btn-primary px-5 py-2 fw-bold">
+  Enviar Mensaje 
+      </button>
+      </button>
+    </div>
 
-          </div>
-        </form><!-- End Contact Form -->
+  </div>
 
-      </div>
+</form>
 
     </section><!-- /Contact Section -->
 
